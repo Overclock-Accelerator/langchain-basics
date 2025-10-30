@@ -1,11 +1,13 @@
 import { config } from "dotenv";
 import { z } from "zod";
-// 🔷 LANGCHAIN: Chat models can return structured output directly without needing an agent
 import { ChatOpenAI } from "@langchain/openai";
 import * as readline from "readline";
 
 config({ path: '.env.local' });
 
+// ═══════════════════════════════════════════════════════════════════════════
+// 📋 SECTION 1: OUTPUT FORMAT DEFINITION
+// ═══════════════════════════════════════════════════════════════════════════
 // 🔷 LANGCHAIN: Zod schema guides AI to generate correct structure and validates response automatically
 // All fields required - system prompt instructs AI to use "Unknown" or 0 for missing data
 const HistoricalFigure = z.object({
@@ -16,6 +18,9 @@ const HistoricalFigure = z.object({
   description: z.string().describe("3 sentence description of their life and accomplishments"),
 });
 
+// ═══════════════════════════════════════════════════════════════════════════
+// 🔷 SECTION 2: MODEL DEFINITION
+// ═══════════════════════════════════════════════════════════════════════════
 // 🔷 LANGCHAIN: withStructuredOutput() method configures the model to return validated structured data
 const model = new ChatOpenAI({
   modelName: "gpt-4o-mini",
@@ -28,6 +33,9 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
+// ═══════════════════════════════════════════════════════════════════════════
+// ⚡ SECTION 3: MODEL INVOCATION
+// ═══════════════════════════════════════════════════════════════════════════
 rl.question('Enter a historical figure name: ', async (figureName) => {
   console.log('\nGetting biographical data...\n');
   
