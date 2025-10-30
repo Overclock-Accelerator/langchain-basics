@@ -1,0 +1,38 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@langchain/anthropic": "^0.3.33",
+    "@langchain/community": "^1.0.0",
+    "@langchain/core": "^1.0.2",
+    "@langchain/langgraph": "^1.0.1",
+    "@langchain/openai": "^1.0.0",
+    "@types/node": "^24.9.2",
+    "dotenv": "^17.2.3",
+    "duck-duck-scrape": "^2.2.7",
+    "langchain": "^1.0.2",
+    "mathjs": "^13.2.2",
+    "zod": "^4.1.12"
+  },
+  "name": "ahmedchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "model-invocation": "node 01-ModelInvocation.mjs",
+    "z01": "node Z01-ModelInvocation.mjs",
+    "z02": "node Z02-ModelStreaming.mjs",
+    "z03": "node Z03-BatchInvocation.mjs",
+    "z04": "node Z04-StructuredOutput.mjs",
+    "z05": "node Z05-SimpleMathAgent.mjs",
+    "z06": "node Z06-AutomatedDriving.mjs",
+    "z07": "node Z07-BookRecommender.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
