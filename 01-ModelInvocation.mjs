@@ -8,10 +8,10 @@ config({ path: '.env.local' });
 // 🔷 SECTION 1: MODEL DEFINITION
 // ═══════════════════════════════════════════════════════════════════════════
 // 🔷 LANGCHAIN: Universal model initialization with "provider:model" syntax
-const model = await initChatModel("openai:gpt-5-mini");
+// const model = await initChatModel("openai:gpt-5-mini");
 // Alternative models - uncomment to use:
 // const model = await initChatModel("anthropic:claude-sonnet-4.5");
-// const model = await initChatModel("anthropic:claude-haiku-4.5");
+const model = await initChatModel("anthropic:claude-haiku-4-5-20251001");
 
 // Create readline interface
 const rl = readline.createInterface({

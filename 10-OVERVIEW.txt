@@ -1,0 +1,404 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                                                                               ║
+║         🎭  EXAMPLE 10: DYNAMIC MODEL ROUTING - COMPLETE OVERVIEW  🎭        ║
+║                                                                               ║
+║              "AI Customer Support: The Honest Version™"                      ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                            ✨ WHAT WAS CREATED ✨                             │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+📁 NEW FILES CREATED (7 total):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. 🎯 10-DynamicModelRouting.mjs        [MAIN EXECUTABLE]
+   │  • Interactive demonstration
+   │  • Dual agent configuration (CEO vs Customer)
+   │  • Message routing logic
+   │  • Cost analysis display
+   │  • Humorous commentary
+   │  • 220 lines of code
+   │
+   └─→ Run with: node 10-DynamicModelRouting.mjs
+
+2. 📖 10-README.md                      [COMPREHENSIVE DOCS]
+   │  • Full explanation of concepts
+   │  • Code structure walkthrough
+   │  • Example interactions
+   │  • Real-world applications
+   │  • Extension ideas
+   │  • Educational value
+   │  • ~500 lines of documentation
+   │
+   └─→ Read this for deep understanding
+
+3. 🚀 10-QUICKSTART.md                  [QUICK START GUIDE]
+   │  • 60-second getting started
+   │  • Sample messages to try
+   │  • What to notice in responses
+   │  • Key takeaways
+   │  • ~150 lines
+   │
+   └─→ Start here if you want to jump right in
+
+4. 📊 10-COMPARISON.txt                 [SIDE-BY-SIDE COMPARISON]
+   │  • Visual comparison tables
+   │  • Response examples
+   │  • Cost analysis
+   │  • Routing flow diagrams
+   │  • ASCII art visualizations
+   │  • ~400 lines
+   │
+   └─→ See the differences at a glance
+
+5. 🧪 10-TEST-DEMO.txt                  [TEST CASES]
+   │  • 5 complete test scenarios
+   │  • Expected outputs
+   │  • Observed behaviors
+   │  • Satirical commentary
+   │  • Educational notes
+   │  • ~150 lines
+   │
+   └─→ Use for systematic testing
+
+6. 📝 10-SUMMARY.md                     [IMPLEMENTATION SUMMARY]
+   │  • Overview of what was built
+   │  • Key concepts demonstrated
+   │  • Technical implementation details
+   │  • Response comparison
+   │  • Next steps
+   │  • ~400 lines
+   │
+   └─→ Complete implementation reference
+
+7. 📋 10-OVERVIEW.txt                   [THIS FILE]
+   │  • High-level overview
+   │  • File guide
+   │  • Quick reference
+   │
+   └─→ Starting point for understanding the example
+
+📝 FILES UPDATED (3 total):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ✅ README.md
+   • Added Example 10 to index
+   • Updated learning path
+   • Added to project structure
+   • Updated section headings
+
+2. ✅ package.json  
+   • Added "10" script
+   • Run with: npm run 10
+
+3. ✅ All files validated
+   • No linter errors
+   • Syntax checked
+   • Ready to run
+
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                         🎯 WHAT THIS EXAMPLE DOES 🎯                          │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+Demonstrates DYNAMIC MODEL & PROMPT ROUTING through a satirical lens:
+
+   USER MESSAGE                    ROUTING LOGIC                  AGENT RESPONSE
+   ═══════════                     ═════════════                  ══════════════
+
+   "CEO: Question"                      │                         🎩 CEO AGENT
+         │                              │                              │
+         │                         Parse Prefix                        │
+         │                              │                         GPT-4o Model
+         │                              ├────────────┐                 │
+         │                              │            │                 │
+         └─────────────────────────────>│            │                 │
+                                        │    Route   │                 │
+   "CUSTOMER: Question"                 │    Logic   │                 │
+         │                              │            │                 │
+         │                              │            └───────────>     │
+         │                              ▼                          Executive
+         │                                                         Strategic
+         └─────────────────────────────>│                         Detailed
+                                        │                         150-300 words
+                                        │                         $0.05-0.15
+                                        │
+                                        └────────────┐
+                                                     │
+                                                     │            😐 CUSTOMER
+                                                     │            AGENT
+                                                     │                │
+                                                     │                │
+                                                     │           GPT-4o-mini
+                                                     └──────────>     │
+                                                                      │
+                                                                 Dismissive
+                                                                 Terse
+                                                                 Minimal
+                                                                 5-15 words
+                                                                 $0.001
+
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                         🔑 KEY CONCEPTS DEMONSTRATED 🔑                       │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+1. 🤖 DYNAMIC MODEL SELECTION
+   • Switch between GPT-4o and GPT-4o-mini at runtime
+   • Based on message prefix (CEO: vs CUSTOMER:)
+   • 10-80x cost difference per query
+
+2. 📝 DYNAMIC SYSTEM PROMPTS
+   • CEO: Executive-focused, strategic, comprehensive
+   • Customer: Overworked, dismissive, minimal effort
+   • Dramatically different behaviors from same base model
+
+3. 🔄 MULTI-AGENT COORDINATION
+   • Two separate agents with distinct configurations
+   • Programmatic routing based on context
+   • Single interface, multiple backends
+
+4. 💰 COST OPTIMIZATION
+   • Route expensive queries to premium model
+   • Route cheap queries to budget model
+   • Real-world production pattern (when done ethically)
+
+5. 🎭 SATIRICAL COMMENTARY
+   • Exaggerates real-world phenomena
+   • Highlights ethics of tiered support
+   • Teaching through humor
+
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                           🚀 HOW TO USE THIS EXAMPLE 🚀                       │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+STEP 1: Read the Quick Start
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📖 Open: 10-QUICKSTART.md
+⏱️  Time: 2 minutes
+🎯 Goal: Get running immediately
+
+STEP 2: Run the Example
+━━━━━━━━━━━━━━━━━━━━━━━━
+💻 Command: node 10-DynamicModelRouting.mjs
+🎮 Try messages from QUICKSTART.md
+⏱️  Time: 5-10 minutes
+
+STEP 3: Review Comparisons
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 Open: 10-COMPARISON.txt
+👀 See side-by-side response examples
+💡 Understand the differences
+⏱️  Time: 5 minutes
+
+STEP 4: Deep Dive
+━━━━━━━━━━━━━━━━━━━
+📚 Read: 10-README.md
+🧠 Understand concepts fully
+🔧 Learn implementation details
+⏱️  Time: 15-20 minutes
+
+STEP 5: Test Systematically
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧪 Use: 10-TEST-DEMO.txt
+✅ Run all test cases
+📈 Observe behaviors
+⏱️  Time: 10 minutes
+
+STEP 6: Reference
+━━━━━━━━━━━━━━━━━
+📝 Keep: 10-SUMMARY.md handy
+🔍 Quick lookup reference
+⏱️  Time: As needed
+
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                            💡 LEARNING OBJECTIVES 💡                          │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+After completing this example, you will understand:
+
+✅ TECHNICAL SKILLS
+   • How to create multiple agent configurations
+   • How to route messages to different agents
+   • How to use system prompts to control behavior
+   • How to parse and handle message prefixes
+   • How to display routing decisions to users
+   • How to estimate and display costs
+
+✅ CONCEPTUAL UNDERSTANDING  
+   • Trade-offs between model cost and capability
+   • The power of system prompt engineering
+   • Multi-agent system architecture
+   • Resource allocation strategies
+   • Ethics of tiered AI services
+
+✅ PRODUCTION KNOWLEDGE
+   • When dynamic routing is appropriate
+   • How to balance costs and quality
+   • Legitimate vs problematic use cases
+   • Monitoring and optimization strategies
+
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                          📊 EXAMPLE COMPARISON 📊                             │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+QUESTION: "What are your thoughts on AI safety?"
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🎩 CEO: What are your thoughts on AI safety?                               ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+ROUTING: Premium GPT-4o Agent
+RESPONSE:
+
+AI safety represents one of the most critical strategic considerations for
+organizations deploying AI systems. From an executive perspective, I recommend
+approaching this through three interconnected frameworks:
+
+1. Technical Safety Architecture
+   Implement robust testing protocols, adversarial testing, and continuous
+   monitoring systems. Consider establishing a dedicated AI safety team that
+   reports directly to executive leadership...
+
+2. Governance and Compliance
+   Develop clear policies around model deployment, data usage, and decision
+   authority. Ensure alignment with emerging regulatory frameworks like the
+   EU AI Act...
+
+3. Stakeholder Communication
+   Maintain transparency with customers, employees, and regulators about AI
+   capabilities, limitations, and safety measures...
+
+[Continues for 200+ more words with strategic frameworks and recommendations]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 Words: 247 | Cost: $0.08 | Quality: Executive strategic analysis
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 😐 CUSTOMER: What are your thoughts on AI safety?                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+ROUTING: Budget GPT-4o-mini Agent
+RESPONSE:
+
+It's important. Check our blog. Bye!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 Words: 7 | Cost: $0.001 | Quality: Technically responded
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DIFFERENCE: 35x word count, 80x cost, ∞ helpfulness gap
+
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                           🎓 EDUCATIONAL VALUE 🎓                             │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+WHY THIS EXAMPLE MATTERS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. TECHNICAL PATTERN
+   You learn how to implement sophisticated model routing that's used in
+   production systems worldwide. This is a REAL pattern with REAL applications.
+
+2. COST AWARENESS  
+   Understanding the cost differences between models is critical for
+   production deployment. This example makes costs tangible and visible.
+
+3. ETHICAL CONSIDERATIONS
+   By exaggerating a problematic approach, the example forces you to think
+   about the ethics of AI deployment and resource allocation.
+
+4. PROMPT ENGINEERING
+   Seeing how dramatically different prompts change behavior is valuable for
+   all LangChain work, not just this specific use case.
+
+5. PRODUCTION READINESS
+   Learning to balance costs, quality, and user experience prepares you for
+   real-world AI product development.
+
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                            ⚡ QUICK REFERENCE ⚡                               │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+RUN COMMANDS:
+━━━━━━━━━━━━━━
+node 10-DynamicModelRouting.mjs
+npm run 10
+
+SAMPLE MESSAGES:
+━━━━━━━━━━━━━━━━
+CEO: What are the strategic priorities for Q4?
+CUSTOMER: How do I reset my password?
+
+DOCUMENTATION FILES:
+━━━━━━━━━━━━━━━━━━━━
+🚀 10-QUICKSTART.md      → Start here (2 min)
+📖 10-README.md          → Full docs (20 min)
+📊 10-COMPARISON.txt     → Visual comparison (5 min)
+🧪 10-TEST-DEMO.txt      → Test cases (10 min)
+📝 10-SUMMARY.md         → Implementation summary (reference)
+📋 10-OVERVIEW.txt       → This file (overview)
+
+RELATED EXAMPLES:
+━━━━━━━━━━━━━━━━━
+• Example 08: Middleware patterns
+• Example 09: Web search agent
+• Example 05-07: Agent fundamentals
+
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                         🎯 SUCCESS CRITERIA 🎯                                │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+You've successfully completed this example when you can:
+
+✅ Run the example without errors
+✅ Understand how message routing works
+✅ Explain the difference between CEO and Customer agents
+✅ Articulate the cost implications of model choice
+✅ Describe legitimate use cases for dynamic routing
+✅ Explain why this satirical approach is problematic
+✅ Implement your own dynamic routing logic
+✅ Modify system prompts to change agent behavior
+
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                            🚀 NEXT STEPS 🚀                                   │
+└───────────────────────────────────────────────────────────────────────────────┘
+
+IMMEDIATE:
+━━━━━━━━━━
+1. Run the example
+2. Try both CEO and CUSTOMER messages
+3. Observe the differences
+4. Read the QUICKSTART guide
+
+SHORT TERM:
+━━━━━━━━━━━
+1. Study the code in 10-DynamicModelRouting.mjs
+2. Modify the system prompts
+3. Add a third tier (e.g., "MANAGER:")
+4. Experiment with different models
+
+LONG TERM:
+━━━━━━━━━━
+1. Implement middleware-based routing (more elegant)
+2. Add sentiment analysis for auto-escalation
+3. Build a hybrid system (start cheap, upgrade if needed)
+4. Explore LangGraph for complex orchestration
+
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                                                                               ║
+║                   🎉 EXAMPLE 10 COMPLETE AND READY! 🎉                       ║
+║                                                                               ║
+║        Start with: node 10-DynamicModelRouting.mjs                           ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+
+
+
+
+
+
+
+

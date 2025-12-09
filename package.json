@@ -26,7 +26,8 @@
     "z04": "node Z04-StructuredOutput.mjs",
     "z05": "node Z05-SimpleMathAgent.mjs",
     "z06": "node Z06-AutomatedDriving.mjs",
-    "z07": "node Z07-BookRecommender.mjs"
+    "z07": "node Z07-BookRecommender.mjs",
+    "10": "node 10-DynamicModelRouting.mjs"
   },
   "keywords": [],
   "author": "",

@@ -133,6 +133,7 @@ async function main() {
         // Get the final AI response
         const finalMessage = response.messages[response.messages.length - 1];
         console.log('💬 Response:');
+        console.log(finalMessage);
         console.log(`   ${finalMessage.content}\n`);
         console.log('─'.repeat(60) + '\n');
         

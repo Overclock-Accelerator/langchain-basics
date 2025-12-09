@@ -53,7 +53,7 @@ node 03-BatchInvocation.mjs
 - Zod schema validation
 - Extracting structured data from LLMs
 
-### Agents and Tools (05-08)
+### Agents and Tools (05-10)
 
 **[05 - Simple Math Agent](05-README.md)**
 - Basic tool definition and usage
@@ -75,6 +75,16 @@ node 03-BatchInvocation.mjs
 - Tool call limiting for cost control
 - Safety and resource management
 
+**[09 - Web Search Agent](09-README.md)**
+- Real-time web search integration
+- Agent-driven information retrieval
+- Dynamic tool invocation
+
+**[10 - Dynamic Model Routing](10-README.md)**
+- Dynamic model selection based on context
+- Conditional system prompt switching
+- Multi-agent coordination (satirical take on tiered support)
+
 ## Learning Path
 
 ### Recommended Order
@@ -83,14 +93,16 @@ node 03-BatchInvocation.mjs
    - Learn how to invoke, stream, and batch process requests
    - Understand structured outputs
 
-2. **Progress to 05-07** to explore agents and tools
+2. **Progress to 05-08** to explore agents and tools
    - See how agents make decisions
    - Learn tool definition and coordination
    - Understand tool chaining
+   - Learn about middleware and production patterns
 
-3. **Finish with 08** for production patterns
-   - Learn about middleware
-   - Understand cost and safety controls
+3. **Explore 09-10** for advanced patterns
+   - Web search integration
+   - Dynamic model routing
+   - Multi-agent systems
 
 ### Each Example Includes
 
@@ -165,6 +177,10 @@ node 01-ModelInvocation.mjs
 ├── 07-README.md                # Documentation for example 07
 ├── 08-BookRecommenderWithLimiter.mjs  # Agent with middleware
 ├── 08-README.md                # Documentation for example 08
+├── 09-WebSearch.mjs            # Web search agent
+├── 09-README.md                # Documentation for example 09
+├── 10-DynamicModelRouting.mjs  # Dynamic model & prompt routing
+├── 10-README.md                # Documentation for example 10
 ├── storedata.json              # Sample data for examples 07-08
 ├── package.json                # Dependencies
 ├── .env.local                  # API keys (create this)

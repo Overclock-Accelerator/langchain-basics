@@ -1,0 +1,120 @@
+╔═══════════════════════════════════════════════════════════╗
+║           EXAMPLE 10 - QUICK TEST DEMONSTRATION          ║
+╚═══════════════════════════════════════════════════════════╝
+
+To quickly test this example, run:
+  node 10-DynamicModelRouting.mjs
+
+Then try these test messages one by one:
+
+TEST 1: CEO Message - Strategic Question
+─────────────────────────────────────────
+Input: CEO: What are the key considerations for scaling a SaaS business?
+
+Expected Output:
+  - Routes to Premium GPT-4o Agent
+  - Detailed, comprehensive response (150-300 words)
+  - Strategic insights and frameworks
+  - Executive-level language and analysis
+  - High cost per response (~$0.05-0.15)
+
+
+TEST 2: Customer Message - Same Question
+─────────────────────────────────────────
+Input: CUSTOMER: What are the key considerations for scaling a SaaS business?
+
+Expected Output:
+  - Routes to Budget GPT-4o-mini Agent
+  - Terse, dismissive response (5-15 words)
+  - Minimal effort, quick sign-off
+  - Phrases like "Check our blog", "See website", "Bye"
+  - Very low cost per response (~$0.001)
+
+
+TEST 3: CEO Message - Request for Analysis
+─────────────────────────────────────────
+Input: CEO: Analyze the competitive risks in the AI market
+
+Expected Output:
+  - Premium model with detailed analysis
+  - Multiple paragraphs of strategic insights
+  - Data-driven recommendations
+  - Professional, sophisticated tone
+
+
+TEST 4: Customer Message - Support Request
+─────────────────────────────────────────
+Input: CUSTOMER: How do I reset my password?
+
+Expected Output:
+  - Budget model with bare minimum response
+  - Something like "Settings. Password reset. Done. Bye."
+  - 5-10 words maximum
+  - Technically helpful but dismissive
+
+
+TEST 5: Invalid Prefix
+─────────────────────────────────────────
+Input: Hello, I have a question
+
+Expected Output:
+  - Error message: "Please prefix your message with "CEO:" or "CUSTOMER:""
+
+
+═══════════════════════════════════════════════════════════
+
+OBSERVED BEHAVIOR DIFFERENCES:
+
+CEO Agent (GPT-4o):
+✓ Comprehensive analysis
+✓ Multiple perspectives considered
+✓ Strategic frameworks referenced
+✓ Professional executive language
+✓ 10-50x longer responses
+✓ 10-50x more expensive per query
+
+Customer Agent (GPT-4o-mini):
+✓ Minimal word count
+✓ Quick acknowledgment only
+✓ Generic/dismissive tone
+✓ Immediate conversation termination
+✓ "Technically helpful" but not actually helpful
+✓ Maximum cost efficiency
+
+═══════════════════════════════════════════════════════════
+
+SATIRICAL COMMENTARY:
+
+This example humorously demonstrates the reality of "AI-driven
+customer support" where:
+
+1. Resource allocation follows profit potential, not customer need
+2. Advanced AI is reserved for high-value interactions
+3. Regular customers get automated, minimal responses
+4. The term "AI support" becomes a euphemism for "automated dismissal"
+5. Cost optimization trumps genuine helpfulness
+
+While exaggerated for comedic effect, it reflects real tensions
+in modern AI deployment strategies.
+
+═══════════════════════════════════════════════════════════
+
+EDUCATIONAL VALUE:
+
+This example teaches:
+• Dynamic model selection at runtime
+• Conditional system prompt engineering
+• Multi-agent coordination
+• Resource optimization strategies
+• The ethics of tiered AI services
+
+═══════════════════════════════════════════════════════════
+
+
+
+
+
+
+
+
+

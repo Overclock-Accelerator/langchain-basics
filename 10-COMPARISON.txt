@@ -1,0 +1,245 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║              EXAMPLE 10: SIDE-BY-SIDE AGENT COMPARISON                       ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│                           CONFIGURATION COMPARISON                          │
+└────────────────────────────────────────────────────────────────────────────┘
+
+╔═══════════════════════╦════════════════════════╦═══════════════════════════╗
+║      ATTRIBUTE        ║      CEO AGENT         ║    CUSTOMER AGENT         ║
+╠═══════════════════════╬════════════════════════╬═══════════════════════════╣
+║ Model                 ║ GPT-5                  ║ GPT-5-nano                ║
+║                       ║ (Advanced)             ║ (Budget)                  ║
+╠═══════════════════════╬════════════════════════╬═══════════════════════════╣
+║ Streaming             ║ YES (Real-time)        ║ NO (Basic invoke)         ║
+║                       ║ Tokens appear live     ║ Wait for full response    ║
+╠═══════════════════════╬════════════════════════╬═══════════════════════════╣
+║ Cost per 1M tokens    ║ ~$5-15                 ║ ~$0.15-0.60               ║
+║                       ║                        ║                           ║
+╠═══════════════════════╬════════════════════════╬═══════════════════════════╣
+║ Response Length       ║ 150-300 words          ║ 5-15 words                ║
+║                       ║ (Comprehensive)        ║ (Terse)                   ║
+╠═══════════════════════╬════════════════════════╬═══════════════════════════╣
+║ Tone                  ║ Professional           ║ Dismissive                ║
+║                       ║ Executive              ║ Overworked                ║
+╠═══════════════════════╬════════════════════════╬═══════════════════════════╣
+║ Detail Level          ║ Strategic analysis     ║ Bare minimum              ║
+║                       ║ Multiple perspectives  ║ Generic acknowledgment    ║
+╠═══════════════════════╬════════════════════════╬═══════════════════════════╣
+║ Typical Cost          ║ $0.05 - $0.15          ║ $0.001 - $0.003           ║
+║ per Response          ║                        ║                           ║
+╠═══════════════════════╬════════════════════════╬═══════════════════════════╣
+║ Processing Priority   ║ MAXIMUM                ║ Minimum Viable            ║
+╠═══════════════════════╬════════════════════════╬═══════════════════════════╣
+║ Use Case              ║ Strategic decisions    ║ Quick FAQ responses       ║
+║                       ║ Executive insights     ║ Basic acknowledgments     ║
+╚═══════════════════════╩════════════════════════╩═══════════════════════════╝
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│                        RESPONSE STYLE COMPARISON                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+QUESTION: "What should we focus on for product innovation?"
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 🎩 CEO AGENT RESPONSE (GPT-5 with STREAMING)                                │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│ Based on current market dynamics and competitive intelligence, I           │
+│ recommend focusing on three strategic pillars for product innovation:      │
+│                                                                              │
+│ 1. **User-Centric Design Evolution**                                       │
+│    Invest in advanced UX research methodologies and predictive analytics   │
+│    to anticipate user needs before they articulate them. Consider          │
+│    implementing AI-driven personalization that adapts the interface based  │
+│    on individual usage patterns and behavioral signals.                    │
+│                                                                              │
+│ 2. **Platform Ecosystem Development**                                      │
+│    Transform from a standalone product to a platform by creating robust    │
+│    API infrastructure that enables third-party integrations. This network  │
+│    effect will create switching costs and competitive moats while          │
+│    expanding your value proposition.                                       │
+│                                                                              │
+│ 3. **Operational Excellence Through AI**                                   │
+│    Integrate machine learning into core workflows to automate repetitive   │
+│    tasks and surface intelligent recommendations. Focus on reducing        │
+│    time-to-value for customers while maintaining security and compliance   │
+│    standards.                                                               │
+│                                                                              │
+│ The key is balancing innovation velocity with stability. I recommend a     │
+│ phased rollout approach with beta testing groups to validate assumptions   │
+│ before full deployment. Monitor leading indicators like adoption rates,    │
+│ feature engagement, and customer satisfaction scores.                      │
+│                                                                              │
+│ Would you like me to elaborate on any of these strategic directions?       │
+│                                                                              │
+│ ✅ Words: 247                                                               │
+│ ✅ Cost: ~$0.08                                                             │
+│ ✅ Quality: Executive-grade strategic analysis                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 😐 CUSTOMER AGENT RESPONSE (GPT-5-nano, NO streaming)                       │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│ Check our product roadmap. Thanks bye.                                     │
+│                                                                              │
+│ ✅ Words: 6                                                                 │
+│ ✅ Cost: ~$0.001                                                            │
+│ ✅ Quality: Technically responded                                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                            KEY DIFFERENCES                                 ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+┌────────────────────┬─────────────────┬──────────────────┬─────────────────┐
+│    METRIC          │   CEO AGENT     │ CUSTOMER AGENT   │   RATIO         │
+├────────────────────┼─────────────────┼──────────────────┼─────────────────┤
+│ Word Count         │     247         │        6         │    41:1         │
+│ Cost per Query     │   $0.08         │    $0.001        │    80:1         │
+│ Response Time      │   2-5 sec       │    0.5-1 sec     │    4:1          │
+│ Helpfulness Score  │    9.5/10       │    2/10          │    4.75:1       │
+│ Strategic Value    │    High         │    None          │     ∞           │
+│ Cost Efficiency    │    Low          │    Maximum       │   1:80          │
+└────────────────────┴─────────────────┴──────────────────┴─────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│                          TYPICAL RESPONSE PATTERNS                          │
+└────────────────────────────────────────────────────────────────────────────┘
+
+CEO AGENT (Comprehensive + Streaming):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Real-time streaming (watch tokens appear!)
+✓ Multi-paragraph responses
+✓ Numbered lists with details
+✓ Strategic frameworks referenced
+✓ Data-driven recommendations
+✓ Forward-thinking perspectives
+✓ Questions to ensure understanding
+✓ Professional executive language
+✓ Considers multiple angles
+
+EXAMPLE PHRASES:
+• "Based on current market dynamics..."
+• "I recommend focusing on three strategic pillars..."
+• "The key consideration is..."
+• "From a risk perspective..."
+• "Would you like me to elaborate..."
+
+CUSTOMER AGENT (Minimal, No Streaming):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ No streaming (just wait)
+✓ One-sentence responses
+✓ 5-15 words maximum
+✓ Generic acknowledgments
+✓ Immediate sign-off
+✓ No elaboration
+✓ Dismissive but "polite"
+✓ Rushes to end conversation
+
+EXAMPLE PHRASES:
+• "Check our FAQ. Thanks bye."
+• "Settings menu. See guides. Bye."
+• "Email sent. Check spam. Thanks."
+• "Noted. See website. Goodbye."
+• "Got it. Help center has info. Bye."
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│                           ROUTING DECISION FLOW                             │
+└────────────────────────────────────────────────────────────────────────────┘
+
+                              User Message
+                                   │
+                                   ▼
+                    ┌──────────────────────────┐
+                    │   Parse Message Prefix   │
+                    └──────────────────────────┘
+                                   │
+                    ┌──────────────┴──────────────┐
+                    ▼                             ▼
+              ┌──────────┐                  ┌──────────┐
+              │  CEO:    │                  │CUSTOMER: │
+              └──────────┘                  └──────────┘
+                    │                             │
+                    ▼                             ▼
+         ┌─────────────────────┐      ┌─────────────────────┐
+         │   🎩 CEO AGENT      │      │  😐 CUSTOMER AGENT  │
+         │                     │      │                     │
+         │  Model: GPT-5       │      │  Model: GPT-5-nano  │
+         │  Prompt: Executive  │      │  Prompt: Dismissive │
+         │  Stream: YES ⚡     │      │  Stream: NO ❌      │
+         └─────────────────────┘      └─────────────────────┘
+                    │                             │
+                    ▼                             ▼
+         ┌─────────────────────┐      ┌─────────────────────┐
+         │  Comprehensive      │      │  Terse              │
+         │  Streaming ⚡       │      │  No streaming ❌    │
+         │  Strategic          │      │  Quick              │
+         │  Detailed           │      │  Minimal            │
+         │  150-300 words      │      │  5-15 words         │
+         │  $0.05-0.15 cost    │      │  $0.001 cost        │
+         └─────────────────────┘      └─────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│                              COST ANALYSIS                                  │
+└────────────────────────────────────────────────────────────────────────────┘
+
+Scenario: 10,000 queries per day
+
+OPTION 1: All queries through CEO Agent (GPT-4o)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+10,000 queries × $0.10 average = $1,000/day
+                                 $30,000/month
+                                 $365,000/year
+
+OPTION 2: All queries through Customer Agent (GPT-4o-mini)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+10,000 queries × $0.002 average = $20/day
+                                   $600/month
+                                   $7,300/year
+
+OPTION 3: Tiered Routing (Realistic Mix)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+100 CEO queries × $0.10    = $10/day
+9,900 Customer × $0.002    = $20/day
+                  TOTAL    = $30/day
+                             $900/month
+                             $10,950/year
+
+💰 SAVINGS vs All-Premium: $354,050/year (97% reduction)
+⚡ COST vs All-Budget: $3,650/year extra (33% increase)
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│                           THE SATIRE EXPLAINED                              │
+└────────────────────────────────────────────────────────────────────────────┘
+
+This example exaggerates to make a point:
+
+❌ WHAT NOT TO DO:
+  • Provide terrible service to regular customers
+  • Optimize costs at expense of genuine helpfulness
+  • Create massive quality gaps between tiers
+  • Make customers feel undervalued
+
+✅ WHAT TO DO INSTEAD:
+  • Use smart routing for genuine complexity differences
+  • Maintain quality standards across all tiers
+  • Be transparent about service levels
+  • Ensure "basic" tier is still genuinely helpful
+  • Route based on query complexity, not customer "value"
+
+THE MESSAGE:
+━━━━━━━━━━━━
+While this example shows extreme differences for comedic effect, it reflects
+real tensions in AI deployment. The goal is to learn the TECHNICAL PATTERNS
+while rejecting the ETHICAL APPROACH shown here.
+
+Good AI support treats all users with respect while still optimizing costs
+intelligently based on actual query complexity, not perceived customer value.
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                         END OF COMPARISON                                  ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
